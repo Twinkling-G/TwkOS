@@ -1,0 +1,130 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000                 EXPORT           led
+    3 00000000                 EXPORT           ledSet
+    4 00000000         
+    5 00000000 2009C018 
+                       FIO0SET0
+                               EQU              0x2009C018
+    6 00000000 2009C01C 
+                       FIO0CLR0
+                               EQU              0x2009C01C
+    7 00000000                 AREA             code,CODE,READONLY
+    8 00000000         led     PROC
+    9 00000000 F84D 4D04       STR              R4,[SP,#-4]!
+   10 00000004 F84D 5D04       STR              R5,[SP,#-4]!
+   11 00000008         
+   12 00000008 2800            CMP              R0, #0
+   13 0000000A D001            BEQ              el
+   14 0000000C 4C0A            LDR              R4, =FIO0SET0
+   15 0000000E E000            B                wr
+   16 00000010         el
+   17 00000010 4C0A            LDR              R4, =FIO0CLR0
+   18 00000012         wr
+   19 00000012 F04F 0501       LDR              R5, =0x1
+   20 00000016 6025            STR              R5, [R4]
+   21 00000018         
+   22 00000018 F85D 5B04       LDR              R5,[SP],#4
+   23 0000001C F85D 4B04       LDR              R4,[SP],#4
+   24 00000020 4770            BX               LR
+   25 00000022                 ENDP
+   26 00000022         
+   27 00000022         ledSet  PROC
+   28 00000022 F84D 4D04       STR              R4,[SP,#-4]!
+   29 00000026         
+   30 00000026 4C04            LDR              R4, =FIO0SET0
+   31 00000028 6020            STR              R0, [R4]
+   32 0000002A         
+   33 0000002A 4C04            LDR              R4, =FIO0CLR0
+   34 0000002C EA6F 0000       MVN              R0, R0
+   35 00000030 6020            STR              R0, [R4]
+   36 00000032         
+   37 00000032 F85D 4B04       LDR              R4,[SP],#4
+   38 00000036 4770            BX               LR
+   39 00000038                 ENDP
+   40 00000038         
+   41 00000038                 END
+              2009C018 
+              2009C01C 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\out\releaseinflash\test.d -o.\out\releaseinflash\test.o -ID:\Kei
+l_v5\ARM\RV31\INC -ID:\Keil_v5\ARM\CMSIS\Include -ID:\Keil_v5\ARM\Inc\NXP\LPC17
+xx --predefine="__UVISION_VERSION SETA 515" --list=.\test.lst USER_CODE\test.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+code 00000000
+
+Symbol: code
+   Definitions
+      At line 7 in file USER_CODE\test.s
+   Uses
+      None
+Comment: code unused
+el 00000010
+
+Symbol: el
+   Definitions
+      At line 16 in file USER_CODE\test.s
+   Uses
+      At line 13 in file USER_CODE\test.s
+Comment: el used once
+led 00000000
+
+Symbol: led
+   Definitions
+      At line 8 in file USER_CODE\test.s
+   Uses
+      At line 2 in file USER_CODE\test.s
+Comment: led used once
+ledSet 00000022
+
+Symbol: ledSet
+   Definitions
+      At line 27 in file USER_CODE\test.s
+   Uses
+      At line 3 in file USER_CODE\test.s
+Comment: ledSet used once
+wr 00000012
+
+Symbol: wr
+   Definitions
+      At line 18 in file USER_CODE\test.s
+   Uses
+      At line 15 in file USER_CODE\test.s
+Comment: wr used once
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+FIO0CLR0 2009C01C
+
+Symbol: FIO0CLR0
+   Definitions
+      At line 6 in file USER_CODE\test.s
+   Uses
+      At line 17 in file USER_CODE\test.s
+      At line 33 in file USER_CODE\test.s
+
+FIO0SET0 2009C018
+
+Symbol: FIO0SET0
+   Definitions
+      At line 5 in file USER_CODE\test.s
+   Uses
+      At line 14 in file USER_CODE\test.s
+      At line 30 in file USER_CODE\test.s
+
+2 symbols
+340 symbols in table

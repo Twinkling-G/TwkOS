@@ -1,0 +1,6 @@
+Dependencies for Project 'GPIO_BEEP', Target 'ReleasInFlash': (DO NOT MODIFY !)
+F (.\CM3\core_cm3.c)(0x52DC84D2)()
+F (.\CM3\core_cm3.h)(0x6065F110)()
+F (.\LPC17xx\system_LPC17xx.c)(0x52DC84D6)()
+F (.\LPC17xx\Startup\startup_LPC17xx.s)(0x52DC84D1)()
+F (.\USER_CODE\main.c)(0x60B33259)()

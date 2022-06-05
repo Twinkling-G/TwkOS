@@ -1,0 +1,12 @@
+.\out\releaseinflash\main.o: USER_CODE\main.c
+.\out\releaseinflash\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\out\releaseinflash\main.o: .\LPC17xx\LPC17xx.h
+.\out\releaseinflash\main.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm3.h
+.\out\releaseinflash\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\releaseinflash\main.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\out\releaseinflash\main.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\out\releaseinflash\main.o: .\LPC17xx\system_LPC17xx.h
+.\out\releaseinflash\main.o: .\LPC17xx\TwkIO.h
+.\out\releaseinflash\main.o: .\LPC17xx\TwkLPC1768.h
+.\out\releaseinflash\main.o: .\LPC17xx\TwkSqQueue.h
+.\out\releaseinflash\main.o: .\LPC17xx\TwkLib.h

@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+".\out\releaseinflash\core_cm3.o"
+".\out\releaseinflash\system_lpc17xx.o"
+".\out\releaseinflash\startup_lpc17xx.o"
+".\out\releaseinflash\app.o"
+".\out\releaseinflash\cpu.o"
+".\out\releaseinflash\cpu_1.o"
+".\out\releaseinflash\twkos.o"
+".\out\releaseinflash\twkosutil.o"
+".\out\releaseinflash\fpftcblistarb.o"
+".\out\releaseinflash\rrtcbarb.o"
+".\out\releaseinflash\tcblist.o"
+".\out\releaseinflash\cpuimp.o"
+".\out\releaseinflash\twkio.o"
+".\out\releaseinflash\twklib.o"
+".\out\releaseinflash\twklpc1768.o"
+".\out\releaseinflash\twksqqueue_1.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x10000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\GPIO_BEEP.map" -o .\Out\ReleaseInFlash\GPIO_BEEP.axf

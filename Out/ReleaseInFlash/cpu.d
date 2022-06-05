@@ -1,0 +1,17 @@
+.\out\releaseinflash\cpu.o: USER_CODE\cpu\cpu.c
+.\out\releaseinflash\cpu.o: USER_CODE\cpu\cpu.h
+.\out\releaseinflash\cpu.o: .\LPC17xx\LPC17xx.h
+.\out\releaseinflash\cpu.o: D:\Keil_v5\ARM\CMSIS\Include\core_cm3.h
+.\out\releaseinflash\cpu.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\releaseinflash\cpu.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\out\releaseinflash\cpu.o: D:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\out\releaseinflash\cpu.o: .\LPC17xx\system_LPC17xx.h
+.\out\releaseinflash\cpu.o: USER_CODE\cpu\cpuType.h
+.\out\releaseinflash\cpu.o: .\USER_CODE\twkOS\TwkOS.h
+.\out\releaseinflash\cpu.o: .\USER_CODE\twkOS\TwkOSutil.h
+.\out\releaseinflash\cpu.o: .\USER_CODE\twkOS\TwkOStype.h
+.\out\releaseinflash\cpu.o: .\USER_CODE\cpuImp\cpuImp.h
+.\out\releaseinflash\cpu.o: .\USER_CODE\cpuImp\cpuImpType.h
+.\out\releaseinflash\cpu.o: .\USER_CODE\twkOS\TwkOSconfig.h
+.\out\releaseinflash\cpu.o: .\USER_CODE\twkOS\FpfTcbListArb.h
+.\out\releaseinflash\cpu.o: .\USER_CODE\twkOS\RrTcbArb.h

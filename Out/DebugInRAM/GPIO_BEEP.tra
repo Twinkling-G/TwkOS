@@ -1,0 +1,21 @@
+*** Creating Trace Output File '.\Out\DebugInRAM\GPIO_BEEP.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\out\debuginram\core_cm3.o"'
+### List of Objects: adding '".\out\debuginram\system_lpc17xx.o"'
+### List of Objects: adding '".\out\debuginram\startup_lpc17xx.o"'
+### List of Objects: adding '".\out\debuginram\main.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\out\debuginram\core_cm3.o" ".\out\debuginram\system_lpc17xx.o" ".\out\debuginram\startup_lpc17xx.o" ".\out\debuginram\main.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x10000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\GPIO_BEEP.map" -o ".\Out\DebugInRAM\GPIO_BEEP.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Out\DebugInRAM\GPIO_BEEP.axf'
+### ADS-LD Command File: '.\Out\DebugInRAM\GPIO_BEEP.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Out\DebugInRAM\GPIO_BEEP.lnp', Handle=0x000001E4
+### Writing '.lnp' file
+### ADS-LD Command file '.\Out\DebugInRAM\GPIO_BEEP.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

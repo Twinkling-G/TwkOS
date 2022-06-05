@@ -1,0 +1,3 @@
+--cpu Cortex-M3 ".\out\debuginram\core_cm3.o" ".\out\debuginram\system_lpc17xx.o" ".\out\debuginram\startup_lpc17xx.o" ".\out\debuginram\main.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x10000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\GPIO_BEEP.map" -o ".\Out\DebugInRAM\GPIO_BEEP.axf"
